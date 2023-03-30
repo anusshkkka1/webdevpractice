@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Object Model</title>
-    <link rel="stylesheet" href="style.css" class="css">
-</head>
-<body>
-  <h1>Javascript</h1>  
-  <div class="moviesList">Movie</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <ul class="moviesList big-red" id="movies">
-    <li class="movie">after sunrise</li>
-    <li class="movie">before sunrise</li>
-    <li class="movie">sunrise</li>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <button class="click">Dark Mode</button>
+    <title>Web Training | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftside">
+      <h1 class="main-heading">Learn to code by watching others</h1>
+      <p class="main-content">
+        See how experienced developers solve problems in real-time. Watching
+        scripted tutorials is great, but understanding how developers think is
+        invaluable.
+      </p>
+      </div>
+      <div class="rightside">
+      <p class="message">
+        <strong>Try it free 7 days then $20/mo. thereafter</strong>
+        </p>
+      <div class="card">
+        <form name="signupForm">
+          <div class="input-group" id="firstnameGroup">
+            <input name="firstname" type="text" placeholder="First Name" />
+            <small class="message"></small>
+          </div>
 
-  <script src="./script.js"></script>
-</body>
+          <div class="input-group" id="lastnameGroup">
+            <input name="lastname" type="text" placeholder="Last Name" />
+            <small class="message"></small>
+          </div>
+
+          <div class="input-group">
+            <input name="Email" type="text" placeholder="Email Address" />
+            <small class="message"></small>
+          </div>
+
+          <div class="input-group">
+            <input name="password" type="password" placeholder="Password" />
+            <small class="message"></small>
+          </div>
+
+          <button id ="submitButton" class="button">
+            Claim your free trial
+          </button>
+        </form>
+        <p class="privacy-message">
+          By clicking the button, you are agreeing to our <a href="">Terms and Services</a>
+        </p>
+      </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
