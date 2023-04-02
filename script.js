@@ -6,6 +6,7 @@ let errors={
 
 submitButton.addEventListener("click",function(e){
     e.preventDefault();
+    errors={};
     let signupForm =document.forms["signupForm"];
     let firstNameInput=signupForm.firstname;
     let lastNameInput=signupForm.lastname;//<input name="lastname">
@@ -41,7 +42,7 @@ submitButton.addEventListener("click",function(e){
             signupForm.submit();
         }
 
-        
+
     });
 
 
